@@ -16,3 +16,19 @@ body
 ul.a {list-style-type: square;}
 
 ol.u {list-style-type: none;}
+
+a:link {
+    color: #334c43;
+}
+
+a:visited {
+    color: #8a54a8;
+}
+
+a:hover {
+    color: #0f1614;
+}
+
+a:active {
+    color: #0f1614;
+}
