@@ -13,12 +13,12 @@ body
 	text-align: left;
 }
 
-ul.a
+ul.square
 {
 	list-style-type: square;
 }
 
-ul.b
+ul.unstyled
 {
 	list-style-type: none;
 }
