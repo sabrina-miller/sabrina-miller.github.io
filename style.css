@@ -1,12 +1,17 @@
 h1{
 	text-align: center;
 	font-family: "Courier";
-	color: #488770;
+	color: #334c43;
 }
 
 body{
 	background-color: #42f4c5;
 	font-family: "Courier";
-	color: #488770;
+	color: #334c43;
 	text-align: center;
+}
+
+ul.a
+{
+	list-style-type: circle;
 }
