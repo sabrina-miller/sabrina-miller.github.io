@@ -22,26 +22,15 @@ img
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 40%;
 }
 
-div 
-{
-	text-align: center;
-	background: #ddfeff;
-}
+div.links {text-align: center;}
 
-a:link {
-    color: #334c43;
-}
+a:link {color: #334c43;}
 
-a:visited {
-    color: #8a54a8;
-}
+a:visited {color: #8a54a8;}
 
-a:hover {
-    color: #0f1614;
-}
+a:hover {color: #0f1614;}
 
-a:active {
-    color: #0f1614;
-}
+a:active {color: #0f1614;}
