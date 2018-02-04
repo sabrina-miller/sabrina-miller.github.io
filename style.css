@@ -4,15 +4,7 @@ h1{
 	color: #334c43;
 }
 
-body.a
-{
-	background-color: #42f4c5;
-	font-family: "Courier";
-	color: #334c43;
-	text-align: center;
-}
-
-body.b
+body
 {
 	background-color: #42f4c5;
 	font-family: "Courier";
