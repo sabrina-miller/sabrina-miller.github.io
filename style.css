@@ -4,14 +4,23 @@ h1{
 	color: #334c43;
 }
 
-body{
+body.a
+{
 	background-color: #42f4c5;
 	font-family: "Courier";
 	color: #334c43;
 	text-align: center;
 }
 
+body.b
+{
+	background-color: #42f4c5;
+	font-family: "Courier";
+	color: #334c43;
+	text-align: left;
+}
+
 ul
 {
-	list-style-type: circle;
+	list-style-type: square;
 }
