@@ -13,7 +13,12 @@ body
 	text-align: left;
 }
 
-ul
+ul.a
 {
 	list-style-type: square;
+}
+
+ul.b
+{
+	list-style-type: none;
 }
