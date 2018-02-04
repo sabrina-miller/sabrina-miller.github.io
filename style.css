@@ -1,9 +1,12 @@
 h1{
 	text-align: center;
 	font-family: "Courier";
+	color: #488770;
 }
 
 body{
 	background-color: #42f4c5;
-
+	font-family: "Courier";
+	color: #488770;
+	text-align: center;
 }
