@@ -5,10 +5,9 @@ body
 	color: black;
 }
 
-div.header
-{
-	text-align: center;
-}
+h1{text-align: center;}
+
+h2 {text-align: center;}
 
 ul.a {list-style-type: square;}
 
