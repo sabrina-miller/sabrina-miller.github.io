@@ -5,6 +5,11 @@ body
 	color: black;
 }
 
+div.header
+{
+	text-align: center;
+}
+
 ul.a {list-style-type: square;}
 
 ol.u {list-style-type: none;}
