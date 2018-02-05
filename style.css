@@ -1,14 +1,14 @@
 h1
 {
 	text-align: center;
-	font-family: "Palatino";
+	font-family: "Courier";
 	color: #334c43;
 }
 
 body
 {
-	background-color: #42f4c5;
-	font-family: "Palatino";
+	background-color: #c1ffec;
+	font-family: "Courier";
 	color: #334c43;
 	text-align: left;
 }
@@ -27,10 +27,15 @@ img
 
 div.links {text-align: center;}
 
+div.resume
+{
+	background-color: white;
+	font-family: "Times New Roman";
+	color: black;
+}
+
 a:link {color: #334c43;}
 
 a:visited {color: #8a54a8;}
 
 a:hover {color: #0f1614;}
-
-a:active {color: #0f1614;}
