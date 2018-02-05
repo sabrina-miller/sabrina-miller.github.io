@@ -13,6 +13,8 @@ body
 	text-align: left;
 }
 
+.fancy {font-style: italic;}
+
 ul.a {list-style-type: square;}
 
 ol.u {list-style-type: none;}
