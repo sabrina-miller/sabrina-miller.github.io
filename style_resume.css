@@ -1,0 +1,12 @@
+body
+{
+	background-color: white;
+	font-family: "Times New Roman";
+	color: black;
+}
+
+ul.a {list-style-type: square;}
+
+ol.u {list-style-type: none;}
+
+div.links {text-align: center;}
