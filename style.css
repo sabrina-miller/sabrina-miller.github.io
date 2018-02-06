@@ -13,6 +13,14 @@ body
 	text-align: center;
 }
 
+.bio
+{
+	text-align: left;
+	margin-right: 10%;
+	margin-left: 10%;
+	border: none;
+}
+
 a:link {color: #334c43;}
 
 a:visited {color: #8a54a8;}
