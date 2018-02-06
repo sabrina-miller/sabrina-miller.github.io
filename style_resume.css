@@ -5,16 +5,31 @@ body
 	color: black;
 }
 
-h1 {text-align: center;}
+#header
+{
+	border: none;
+	margin-right: 40%;
+	margin-left: 40%;
+	text-align: center;
+}
 
-h2 {text-align: center;}
+h3 
+{
+	border: outset;
+}
 
 ul.a {list-style-type: square;}
 
 ol.u {list-style-type: none;}
 
-.italics {font-type: italics;}
+.fancy {font-style: italic;}
 
 .bold {font-weight: bold;}
+
+a:link {color: #334c43;}
+
+a:visited {color: #8a54a8;}
+
+a:hover {color: #0f1614;}
 
 

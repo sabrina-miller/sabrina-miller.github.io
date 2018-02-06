@@ -10,19 +10,7 @@ body
 	background-color: #c1ffec;
 	font-family: "Courier";
 	color: #334c43;
-	text-align: left;
-}
-
-ul.a {list-style-type: square;}
-
-ol.u {list-style-type: none;}
-
-img 
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+	text-align: center;
 }
 
 a:link {color: #334c43;}
