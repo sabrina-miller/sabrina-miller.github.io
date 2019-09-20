@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Résumé - My Docs</title>
+  <title>Résumé - Sabrina Miller</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -36,7 +36,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> My Docs</a>
+        <a href=".." class="icon icon-home"> Sabrina Miller</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -53,11 +53,6 @@
     <a class="" href="..">Home</a>
 	    </li>
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../personal/">About Me</a>
-	    </li>
-          
             <li class="toctree-l1 current">
 		
     <a class="current" href="./">Résumé</a>
@@ -68,6 +63,8 @@
         <ul>
         
             <li><a class="toctree-l3" href="#education">Education</a></li>
+        
+            <li><a class="toctree-l3" href="#current-work">Current Work</a></li>
         
             <li><a class="toctree-l3" href="#skills">Skills</a></li>
         
@@ -82,6 +79,11 @@
     <a class="" href="../projects/">Projects</a>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <a class="" href="../personal/">About Me</a>
+	    </li>
+          
         </ul>
       </div>
       &nbsp;
@@ -92,7 +94,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">My Docs</a>
+        <a href="..">Sabrina Miller</a>
       </nav>
 
       
@@ -115,17 +117,33 @@
             <div class="section">
               
                 <h1 id="resume">Résumé</h1>
-<p>Download a PDF of my résumé <a href="../things/resume.pdf">here</a>
-The following gives more detailed descriptions of things enumerated on my résumé.</p>
+<p>Download a PDF of my résumé <a href="../things/resume.pdf">here</a>.
+<div>The following gives more detailed descriptions of things enumerated on my résumé.</div></p>
 <h3 id="education">Education</h3>
-<pre><code>Tufts University Class of 2020
-B.S. in Computer Engineering
-GPA: 3.91
-</code></pre>
+<p>
+<div>Tufts University Class of 2020</div>
+<div>B.S. in Computer Engineering</div>
+<div>GPA: 3.91</div>
+</p>
 
-<pre><code>Santa Cruz High School Class of 2016
-Valedictorian
-</code></pre>
+<p>
+<div>Santa Cruz High School Class of 2016</div>
+<div>Valedictorian</div>
+</p>
+
+<h3 id="current-work">Current Work</h3>
+<p>I am currently working at <a href="https://tulip.co">Tulip Interfaces</a> on the IoTH (IoT/Hardware) team. I interned there over the summer, and am continuing my work into the school year as a part-time engineer. Some of the things I am working/have worked on:</p>
+<ul>
+
+<li> <strong>Installing Tulip OS on x86 devices.</strong> This involves getting Tulip's Yocto layer to boot on devices such as the Dell 3002 and Up Squared Board. </li>
+
+<li> <strong>ADC calibration board PCB design, fabrication, testing, and code integration into Tulip's gateway.</strong> Altium was used for the PCB design, and the boards were fabricated without any parts soldered on. I hand-soldered all components onto the boards, which included stable voltage sources (using zener diodes) and Wien Bridge oscillators. The device received power from Tulip's gateway and output voltages, which I then wrote a utility for to calculate ADC calibration coefficients. </li>
+
+<li> <strong> Wrote eMMC flasher scripts for Nanopi-R1 boards. </strong> Using a reference Nanopi image, I added a partition and inserted a Tulip image into the reference image. Once this expanded reference image was burned onto an SD card, I wrote a utility that burned the SD card to the Nanopi's on-board eMMC so that after the SD card was removed, Tulip OS would boot from the eMMC. </li>
+
+<li> <strong> Hardware and code debug for Gizmo: a version of the <a href="https://github.com/formatc1702/Micro-Word-Clock">MicroWorld clock.</a></strong> Initially used an Arduino as an ISP to load bootloader and .ino code onto the clock's ATMega chip, then switched over to using command line utilities and AVR MKII programmer. </li>
+
+</ul>
 
 <h3 id="skills">Skills</h3>
 <p>Computer/software </p>
@@ -160,7 +178,7 @@ Valedictorian
         <a href="../projects/" class="btn btn-neutral float-right" title="Projects">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../personal/" class="btn btn-neutral" title="About Me"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -186,7 +204,7 @@ Valedictorian
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../personal/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../projects/" style="color: #fcfcfc">Next &raquo;</a></span>
