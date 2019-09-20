@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Projects - My Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Projects";
+    var mkdocs_page_input_path = "projects.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> My Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../personal/">About Me</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../resume/">Résumé</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Projects</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#projects">Projects</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#swarmbots">Swarmbots</a></li>
+        
+            <li><a class="toctree-l3" href="#pulse-oximeter">Pulse Oximeter</a></li>
+        
+            <li><a class="toctree-l3" href="#vending-machine-computer">Vending Machine Computer</a></li>
+        
+            <li><a class="toctree-l3" href="#matlab-tuner">MATLAB Tuner</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">My Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Projects</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="projects">Projects</h1>
+<h2 id="swarmbots">Swarmbots</h2>
+<p><center>
+<img alt="Swarmbots" src="../things/bots.jpg" /><img alt="Filter circuits" src="../things/circuits.jpg" />
+</center></p>
+<p><center>
+<p>[<em>Left</em>] <em>Tatyana and Nadia</em></p>
+<p>[<em>Right</em>] <em>Filter/amplification and microphone circuits</em></p>
+</center></p>
+<p>Modeled and simulated the navigation and environmental sensing of autonomous vehicles by designing a swarmbot team consisting of a community of two robots. Designed and implemented circuits for colored path detection, sending and receiving messages, collision detection, motor control. Signals from the hand-soldered circuits were sent to an Arduino, which had various sets of code to complete challenges.</p>
+<h2 id="pulse-oximeter">Pulse Oximeter</h2>
+<p><center>
+<img alt="Pulse oximeter schematic" src="../things/pulse_ox.png" />
+<p> <em>Pulse oximeter schematic</em> </p>
+</center></p>
+<p>Built and tested a circuit that read a patient’s pulse. An infrared LED shone through a patient’s finger, with a photosensor on the opposite side of the IR LED that responded according to how much IR light was absorbed by the blood in the patient’s finger. This sensor voltage was passed through a bandpass filter with a gain of ≈ 60 dB to filter out DC signals and higher frequency noise. Feedback control was included (to correct for patient finger size) by reducing the light emitted from the IR LED when a smaller finger was in the detector. The current flow through the IR LED was reduced using an NMOS transistor. The transistor’s gate was connected to the output of a differential amplifier, which took the difference between the DC signal from the photodetector and a reference voltage of 4.7 V, and amplified that difference with a gain of 10 V/V. The reference voltage was generated using a zener diode in breakdown. The differential amplifier also acted as a low pass filter (capacitor in parallel with op amp’s feedback resistor). Its purpose was to compare the DC signal from the photodetector, so it needed to filter out the pulse signal in order to work properly. </p>
+<h2 id="vending-machine-computer">Vending Machine Computer</h2>
+<p><center>
+<img alt="Vending machine computer" src="../things/vending_machine.jpg" /> <img alt="Vending machine schematic" src="../things/vending_schem.jpg" />
+<p> [<em>Top</em>] <em>Physical implementation</em> </p>
+<p> [<em>Bottom</em>] <em>Block diagram</em> </p>
+</center></p>
+<p>Designed, simulated, built, and tested a circuit that modeled a vending machine. The circuit "accepted" quarters, meaning every time a piece of paper or something similar was placed in a sensor (opto-interrupter), a LED display indicating how much change had been put in the machine increased by 25. The machine “dispensed” a soda when the amount deposited was equal to $2.50. When this happened, a seven-segment display had to display a “U”, and after three seconds, the circuit had to reset back to its initial state. Every time a quarter was put into the machine, a tone had to be played and when the soda was dispensed, a melody had to play. If the deposited money was more than $2.50, a change indicator light had to light up (up to $0.50 change - this was represented by a negative sign). </p>
+<h2 id="matlab-tuner">MATLAB Tuner</h2>
+<p><center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U-JsfQian4s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p> <em>Video of tuner in action</em> </p>
+</center></p>
+<p>Designed and coded a device using MATLAB to determine a sampled note pitch compared to a tuning note (A at 440 Hz). Fourier analysis converts a signal from its original domain (in this case, time) to a representation in the frequency domain. Since the fundamental harmonic is the lowest harmonic associated with a given pitch, the first peak in a FFT of an audio input is associated with the fundamental frequency. This fundamental frequency was compared to actual note frequencies to determine which pitch it was closest to, then plotted on a graph as compared to the actual note pitch. The tuner also played ideal note pitches (pure sine waves at the correct frequencies) and saved the most recent note progression.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../resume/" class="btn btn-neutral" title="Résumé"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../resume/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
