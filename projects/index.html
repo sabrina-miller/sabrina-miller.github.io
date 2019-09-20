@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="../img/favicon.ico">
+
+    
+    <title>Projects - My Docs</title>
+    
+
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+    <link href="../css/highlight.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href="..">My Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../personal/">About Me</a>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href="./">Projects</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../resume/">Résumé</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../personal/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../resume/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#projects">Projects</a></li>
+            <li class="second-level"><a href="#swarmbots">Swarmbots</a></li>
+                
+            <li class="second-level"><a href="#pulse-oximeter">Pulse Oximeter</a></li>
+                
+            <li class="second-level"><a href="#vending-machine-computer">Vending Machine Computer</a></li>
+                
+            <li class="second-level"><a href="#matlab-tuner">MATLAB Tuner</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="projects">Projects</h1>
+<h2 id="swarmbots">Swarmbots</h2>
+<p><center>
+<img alt="Swarmbots" src="../things/bots.jpg" /><img alt="Filter circuits" src="../things/circuits.jpg" />
+</center></p>
+<p><center>
+<p>[<em>Left</em>] <em>Tatyana and Nadia</em></p>
+<p>[<em>Right</em>] <em>Filter/amplification and microphone circuits</em></p>
+</center></p>
+<p>Modeled and simulated the navigation and environmental sensing of autonomous vehicles by designing a swarmbot team consisting of a community of two robots. Designed and implemented circuits for colored path detection, sending and receiving messages, collision detection, motor control. Signals from the hand-soldered circuits were sent to an Arduino, which had various sets of code to complete challenges.</p>
+<h2 id="pulse-oximeter">Pulse Oximeter</h2>
+<p><center>
+<img alt="Pulse oximeter schematic" src="../things/pulse_ox.png" />
+<p> <em>Pulse oximeter schematic</em> </p>
+</center></p>
+<p>Built and tested a circuit that read a patient’s pulse. An infrared LED shone through a patient’s finger, with a photosensor on the opposite side of the IR LED that responded according to how much IR light was absorbed by the blood in the patient’s finger. This sensor voltage was passed through a bandpass filter with a gain of ≈ 60 dB to filter out DC signals and higher frequency noise. Feedback control was included (to correct for patient finger size) by reducing the light emitted from the IR LED when a smaller finger was in the detector. The current flow through the IR LED was reduced using an NMOS transistor. The transistor’s gate was connected to the output of a differential amplifier, which took the difference between the DC signal from the photodetector and a reference voltage of 4.7 V, and amplified that difference with a gain of 10 V/V. The reference voltage was generated using a zener diode in breakdown. The differential amplifier also acted as a low pass filter (capacitor in parallel with op amp’s feedback resistor). Its purpose was to compare the DC signal from the photodetector, so it needed to filter out the pulse signal in order to work properly. </p>
+<h2 id="vending-machine-computer">Vending Machine Computer</h2>
+<p><center>
+<img alt="Vending machine computer" src="../things/vending_machine.jpg" /> <img alt="Vending machine schematic" src="../things/vending_schem.jpg" />
+<p> [<em>Top</em>] <em>Physical implementation</em> </p>
+<p> [<em>Bottom</em>] <em>Block diagram</em> </p>
+</center></p>
+<p>Designed, simulated, built, and tested a circuit that modeled a vending machine. The circuit "accepted" quarters, meaning every time a piece of paper or something similar was placed in a sensor (opto-interrupter), a LED display indicating how much change had been put in the machine increased by 25. The machine “dispensed” a soda when the amount deposited was equal to $2.50. When this happened, a seven-segment display had to display a “U”, and after three seconds, the circuit had to reset back to its initial state. Every time a quarter was put into the machine, a tone had to be played and when the soda was dispensed, a melody had to play. If the deposited money was more than $2.50, a change indicator light had to light up (up to $0.50 change - this was represented by a negative sign). </p>
+<h2 id="matlab-tuner">MATLAB Tuner</h2>
+<p><center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U-JsfQian4s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p> <em>Video of tuner in action</em> </p>
+</center></p>
+<p>Designed and coded a device using MATLAB to determine a sampled note pitch compared to a tuning note (A at 440 Hz). Fourier analysis converts a signal from its original domain (in this case, time) to a representation in the frequency domain. Since the fundamental harmonic is the lowest harmonic associated with a given pitch, the first peak in a FFT of an audio input is associated with the fundamental frequency. This fundamental frequency was compared to actual note frequencies to determine which pitch it was closest to, then plotted on a graph as compared to the actual note pitch. The tuner also played ideal note pitches (pure sine waves at the correct frequencies) and saved the most recent note progression.</p></div>
+        
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+
+        
+        
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
