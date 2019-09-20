@@ -1,5 +1,5 @@
 site_name: My Docs
-theme: cinder
+theme: readthedocs
 nav:
   - Home: index.md
   - About Me: personal.md
