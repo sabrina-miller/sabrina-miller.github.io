@@ -1,7 +1,7 @@
-site_name: My Docs
-theme: cinder
+site_name: Sabrina Miller
+theme: readthedocs
 nav:
   - Home: index.md
-  - About Me: personal.md
   - Résumé: resume.md
   - Projects: projects.md
+  - About Me: personal.md
